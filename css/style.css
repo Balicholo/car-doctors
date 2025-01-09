@@ -1,0 +1,202 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fredericka+the+Great&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Noto+Serif+Devanagari:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&family=Squada+One&family=Teko:wght@300..700&family=Viga&display=swap');
+/* font-family: "Poppins", serif; */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    background-color: #161616;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  /* Navbar styling */
+/* nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+} */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    /* background-color: #000; */
+    z-index: 1000;
+    top: 0;
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Poppins", serif;
+  }
+
+  .nav-links li a:hover{
+    background-color: rgba(255, 255, 255, 0.158);
+    padding: 3px;
+    border-radius: 2px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 70px;
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.37);
+        font-size: 35px;
+        @media (max-width: 426px) {
+            font-size: 25px;
+        }
+    }
+  }
+  .social-icons{
+    a:hover{
+     color: white;
+    }
+  }
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    top: 20px;
+    @media (max-width: 426px) {
+        top: 15px;
+    }
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff52;
+    border-radius: 2px;
+  }
+  .hamburger span:hover{
+    background-color: white;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 998px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #000000b9;
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding: 20px;
+      gap: 15px;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .nav-links.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .social-icons {
+      top: 10px;
+      right: 60px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+.container{
+    position: relative;
+    column-count: 3;
+    padding: 10px;
+}
+.image{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+@media (max-width: 480px) {
+.container{
+    column-count: 2;
+}
+}
+.scroll-wrapper{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+/* Full-screen overlay with blur */
+.overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900; /* Ensure it's behind the navbar */
+}
+
+.overlay-container .content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+.landing-text{
+    @media (max-width:524px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
