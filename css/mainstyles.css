@@ -176,6 +176,9 @@ html{
     @media (max-width:826px) {
         font-size: 30px;
     }
+    @media (max-width:361px) {
+      font-size: 20px;
+  }
 }
 
 .home-content {
@@ -212,6 +215,9 @@ html{
         font-size: 25px;
         padding: 2px 5px;
     }
+    @media (max-width:361px) {
+      font-size: 16px;
+  }
 }
 
 .words span:nth-child(1) { animation-delay: 0s; }
@@ -241,6 +247,9 @@ html{
         background-color: #da3f24;
         width: 200px;
         height: 40px;
+        @media (max-width:361px) {
+          width: 150px;
+      }
     }
     a{
         text-decoration: none;
@@ -249,6 +258,9 @@ html{
         font-family: "Poppins", serif;
         font-size: 20px;
         font-weight: 600;
+        @media (max-width:361px) {
+          font-size: 13px;
+      }
     }
     button:hover{
         background-color: #133244;
