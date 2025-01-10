@@ -684,10 +684,17 @@ align-items: center;
 /* CONTACT-SECTION */
 #contact-section{
   width: 100%;
-  background-image: url(../assets/images/image-1.jpg);
+  background-image: url(https://i.ibb.co/c6FNyhr/image-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.contact--us{
+  background-color: #ffffff00;
+  backdrop-filter: blur(3px);
+  p, h1{
+    color: white;
+  }
 }
 .contact-wrapper a button{
   background-color: #133244;
